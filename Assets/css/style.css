@@ -162,6 +162,7 @@ img {
     flex: 1 1 145px;
     margin: 10px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .item img {
