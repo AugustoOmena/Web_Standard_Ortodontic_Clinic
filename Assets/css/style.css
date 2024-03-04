@@ -6,6 +6,11 @@
 }
 
 /* Estilos Gerais */
+.texto-responsivo {
+    font-size: max(min(2vw, 30px), 10px);
+    min-height: 250px;
+}
+
 html {
     scroll-behavior: smooth;
   }
@@ -157,7 +162,7 @@ img {
 }
 
 
-.item {
+.item, .itemGrande {
     position: relative;
     flex: 1 1 145px;
     margin: 10px;
@@ -170,7 +175,7 @@ img {
     height: auto;
 }
 
-.item p {
+.item p, .itemGrande p {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -183,7 +188,7 @@ img {
     transition: transform 0.3s, text-decoration 0.3s;
     text-decoration: underline transparent;
     font-size: 1em;
-    max-width: 80%;
+    max-width: 90%;
 }
 
 .item:hover p {
@@ -305,6 +310,11 @@ p {
     .ajusteLargura {
         margin-left: 1rem;
     }
+
+    .texto-responsivo {
+        font-size: 3vw;
+    }
+
 }
 
 @media (max-width: 590px) {
@@ -314,6 +324,21 @@ p {
 
     .item p {
         font-size: 18px;
+    }
+
+    .texto-responsivo {
+        font-size: 4vw;
+    }
+}
+@media (max-width: 450px) {
+    .texto-responsivo {
+        font-size: 4.5vw;
+    }
+}
+@media (max-width: 350px) {
+    .texto-responsivo {
+        min-height: 220px;
+        font-size: 4.7vw;
     }
 }
 
