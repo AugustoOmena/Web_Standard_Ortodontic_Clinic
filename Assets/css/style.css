@@ -313,6 +313,7 @@ p {
 
     .texto-responsivo {
         font-size: 3vw;
+        min-height: 300px;
     }
 
 }
