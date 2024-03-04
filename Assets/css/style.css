@@ -338,7 +338,7 @@ p {
 }
 @media (max-width: 350px) {
     .texto-responsivo {
-        min-height: 220px;
+        min-height: 320px;
         font-size: 4.7vw;
     }
 }
